@@ -12,7 +12,7 @@ import androidx.core.app.NotificationCompat;
 
 public class timer_service extends IntentService {
     public timer_service() {
-        super("Timer Servicres");
+        super("Timer Service");
     }
 
     @Override
@@ -44,7 +44,7 @@ public class timer_service extends IntentService {
             return;
         }
 
-        ResultReceiver receiver=intent.getParcelableExtra("reciever");
+        ResultReceiver receiver=intent.getParcelableExtra("receiver");
         int time=intent.getIntExtra("timer",0);
         for (int i =0;i<time;i++){
             Log.v("timer","i ="+i);

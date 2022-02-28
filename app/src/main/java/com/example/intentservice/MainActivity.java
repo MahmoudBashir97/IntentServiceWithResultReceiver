@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent=new Intent(MainActivity.this,timer_service.class);
         intent.putExtra("timer",10);
-        intent.putExtra("reciever",recieved);
+        intent.putExtra("receiver",recieved);
         startService(intent);
     }
 
